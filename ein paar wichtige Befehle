@@ -1,0 +1,12 @@
+sudo su                         # wechsel an root-account or superuser
+Drucken (ctrl + D)              # zurück zu normal user
+cat -a /etc | wc -l             # zahlen die Linie Datei in /etc Directory
+reset                           # löschen alle linien in Terminal
+sudo dnf update                 # update dnf (eine Instruktur zu installieren)
+sudo dnf install ... (z.B tree) # install tree
+rm und rm -r
+mv
+cp
+mkdir
+echo "..... " > filelist.txt    # erstell ein Text
+echo " ... " >> fllelise.txt    # fügen Text in bleibendem Text hinzu
