@@ -10,3 +10,7 @@ cp
 mkdir
 echo "..... " > filelist.txt    # erstell ein Text
 echo " ... " >> fllelise.txt    # fügen Text in bleibendem Text hinzu
+
+# Buch: "The Linux Command Line" by William shotts
+date                            # Zeit und Datum
+cal                             # kalender von aktuellem Monat
