@@ -11,10 +11,38 @@ mkdir
 echo "..... " > filelist.txt    # erstell ein Text
 echo " ... " >> fllelise.txt    # fügen Text in bleibendem Text hinzu
 
-# Buch: "The Linux Command Line" by William shotts
+############## Buch: "The Linux Command Line" by William Shotts ####################
 date                            # Zeit und Datum
 cal                             # kalender von aktuellem Monat
 file filename                   # Erklärung über die Datei
 # ASCII -> American Standard Code Information Interchange
 # Command -options argument: 
 # Options: -a, -A, -d, -F, -h, -l, -r, -S, -t
+
+######## Wildcards ##############
+*                               # matches any characters
+?                               # matches any single character
+[character]
+[!characters]
+[[:class:]]
+
+###################### commonly Used Character Classes #########################
+[:alnum:]                       # Matches any alphanumeric character
+[:alpha:]                       # Matches any alphabeic character
+[:digit:]                       # Matches any numeral
+[:lower:]                       # Matches any lowercase letter
+[:upper:]                       # Matches any uppercase letter
+
+############## Wildcard Example #####################################
+*                               # all files
+g*                              
+b*.txt                          # any files beginning wiht "b" followed by any characters und ending with ".txt"
+Data???                         # any files beginning with "Date" followed by exactly three characters
+[abc]*                          # any files beginning with either an "a", a"b", or a "c"
+BACKUP.[0-9][0-9][0-9]          # any files beginning with "BACKUP." followed by exactly three numerals
+[[:upper:]]*
+[![:digit:]]*                   # any files not beginning with a numeral
+*[[:lower:]123]                 # any files ending with a lowecase letter or the numerals "1", "2", "3"
+
+
+
